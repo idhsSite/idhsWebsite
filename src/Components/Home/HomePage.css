@@ -1,0 +1,26 @@
+.home{
+    background-color: #7258BC;
+    margin: 0%;
+}
+.home-container {
+    background: url('/public/LogoIDHS.png') center/cover no-repeat;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(10, 1, 1);
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2em;
+  }

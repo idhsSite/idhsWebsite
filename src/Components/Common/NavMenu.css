@@ -1,0 +1,31 @@
+ul {
+    list-style: none;
+    padding: 0;
+  margin: 0;
+    background-color: #7258BC;
+    display: flex;
+ 
+    
+  }
+  
+  li {
+    
+    justify-content: space-between;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #555;
+  }
+  .logo {
+    max-width: 300px; /* Adjust the maximum width of the logo */
+    max-height: 50px; /* Adjust the maximum height of the logo */
+  }

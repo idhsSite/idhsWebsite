@@ -1,0 +1,8 @@
+.About-page{
+    display:flex ;
+    flex-direction: column;
+}
+.About-container{
+    display: flex;
+flex-direction: row;
+}
