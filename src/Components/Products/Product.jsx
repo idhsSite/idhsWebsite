@@ -8,7 +8,6 @@ function Product() {
         <h1>Services offered by us</h1>
             <h3>User App</h3>
             <div>
-               
                 <li>Book appointment through mobile app</li>
                 <li>Check and book emergengy services near your loaction</li>
                 <li>choose customise treatment package for your diseases</li>

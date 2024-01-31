@@ -7,7 +7,7 @@ function About() {
       <h1>About us</h1>
       <div >
       <h3>Our Mission</h3>
-      <p>We are committed to providing top-notch health services to our user wIthin their city.
+      <p>We are committed to providing top-notch health services to our user within their city.
 
 Our mission is to help people achieve optimal health and wellness through personalized plans and ongoing support.</p>
 <img src='./Misson.png' alt='Logo'/>
@@ -32,7 +32,6 @@ At IDHS, we take a holistic approach to health and wellness. We believe that tru
 <img src='./Approach.png' alt='Logo'/>
 
       </div>
-   
 
 
     </div>

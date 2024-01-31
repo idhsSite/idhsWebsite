@@ -12,7 +12,6 @@ function App() {
     <div>
       <NavMenu/>
       <HomePage/>
-   
       <Product/>
       <About/>
       <Contact/>
@@ -22,7 +21,7 @@ function App() {
 <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
-        <Route path="/product" element={<Product/>} />
+        <Route path="/product" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>

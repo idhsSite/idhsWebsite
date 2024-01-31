@@ -16,32 +16,28 @@ const NavbarComponent = () => {
       <ul>
         <li>
           <img src='LogoIDHS.png' alt='Logo' className='logo' />
-
         </li>
         <li onClick={() => { handleClickScroll("Home") }}>
-          <Link to="/homepage" class="list" >
+          <Link to="/homepage" className="list" >
             Home
           </Link>
         </li>
         <li onClick={() => { handleClickScroll("about") }}>
-        <Link to="/about" class="list">
-          about
+        <Link to="/about" className="list">
+          About
         </Link>
         </li>
-
-        
-        <Link to="/product" class="list">
+        <li onClick={() => { handleClickScroll("product") }}>
+        <Link to="/product" className="list">
           Product
         </Link>
+        </li>
         <li onClick={() => { handleClickScroll("contact") }}>
-        <Link to="/contact" class="list">
+        <Link to="/contact" className="list">
           Contact
         </Link>
         </li>
-     
       </ul>
-
-
     </div>
   );
 };
