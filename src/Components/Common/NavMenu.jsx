@@ -23,19 +23,19 @@ const NavbarComponent = () => {
           </Link>
         </li>
         <li onClick={() => { handleClickScroll("about") }}>
-        <Link to="/about" className="list">
-          About
-        </Link>
+          <Link to="/about" className="list">
+            About
+          </Link>
         </li>
         <li onClick={() => { handleClickScroll("product") }}>
-        <Link to="/product" className="list">
-          Product
-        </Link>
+          <Link to="/product" className="list">
+            Product
+          </Link>
         </li>
         <li onClick={() => { handleClickScroll("contact") }}>
-        <Link to="/contact" className="list">
-          Contact
-        </Link>
+          <Link to="/contact" className="list">
+            Contact
+          </Link>
         </li>
       </ul>
     </div>

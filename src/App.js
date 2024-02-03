@@ -10,15 +10,14 @@ import Product from "./Components/Products/Product"
 function App() {
   return (
     <div>
-      <NavMenu/>
-      <HomePage/>
-      <Product/>
-      <About/>
-      <Contact/>
-    
+      <NavMenu />
+      <HomePage />
+      <Product />
+      <About />
+      <Contact />
 
 
-<Routes>
+      <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
         <Route path="/product" element={<Product />} />

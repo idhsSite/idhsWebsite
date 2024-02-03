@@ -6,9 +6,9 @@ import './Contact.css'
 function Contact() {
   return (
     <div className='Contact-container' >
-        <OurContactDetails/>
-        
-    <UserContactForm/>
+      <OurContactDetails />
+
+      <UserContactForm />
     </div>
   )
 }
