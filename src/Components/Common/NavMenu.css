@@ -1,29 +1,69 @@
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #7258BC;
-    display: flex;
+/* NavMenu.css */
+
+
+body {
+  scroll-behavior: smooth;
+}
+.menu-toggle {
+  display: none; /* Hide the button by default on larger screens */
+  cursor: pointer;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #7258BC;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li {
+  justify-content: space-between;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #555;
+}
+
+.logo {
+  max-width: 300px;
+  max-height: 50px;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
     align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #7258BC;
   }
-  
-  li {
-    justify-content: space-between;
+
+  .nav-menu.open {
+    display: flex;
   }
-  
-  a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 8px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+
+  .nav-menu li {
+    margin: 10px 0;
   }
-  
-  a:hover {
-    background-color: #555;
-  }
-  .logo {
-    max-width: 300px; /* Adjust the maximum width of the logo */
-    max-height: 50px; /* Adjust the maximum height of the logo */
-  }
+}

@@ -3,14 +3,13 @@
     margin: 0%;
 }
 .home-container {
-    background: url('/public/LogoIDHS.png') center/cover no-repeat;
-    height: 50vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(10, 1, 1);
-  }
+  background-color: #f0f0f0; /* Set your desired background color */
+  padding: 20px; /* Add some padding for better aesthetics */
+  height: 500px; /* Set your desired height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
   .content {
     text-align: center;

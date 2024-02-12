@@ -1,6 +1,91 @@
-.Contact-container{
+/* NavMenu.css */
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #7258BC;
     display: flex;
-    flex-direction: row;
-    
     align-items: center;
-}
+  }
+  
+  .nav-menu li {
+    margin-right: 20px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    background-color: #555;
+  }
+  
+  .logo-container {
+    text-align: left;
+    margin-left: auto;
+  }
+  
+  .logo {
+    max-width: 150px;
+    max-height: 50px;
+  }
+  
+  /* Media query for small screens */
+  @media only screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      font-size: 24px;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #7258BC;
+    }
+  
+    .nav-menu.open {
+      display: flex;
+    }
+  
+    .nav-menu li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .logo-container {
+      margin: 0;
+    }
+  
+    /* Additional styles for hover action */
+    .menu-toggle:hover + .nav-menu,
+    .nav-menu:hover {
+      display: flex;
+    }
+  
+    .nav-menu:not(:hover) {
+      display: none;
+    }
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 36px; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 20px; /* Add some space below the heading */
+  }

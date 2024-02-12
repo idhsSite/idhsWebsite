@@ -1,41 +1,46 @@
-import React from 'react';
+// NavbarComponent.jsx
+
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './NavMenu.css';
-import HomePage from '../Home/HomePage';
 
 const NavbarComponent = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleClickScroll = (id) => {
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({
+        behavior: 'smooth',
+      });
+      setIsMenuOpen(false);
     }
   };
+
   return (
     <div>
-      <ul>
+      <div className="menu-toggle" onClick={handleMenuToggle}>
+        ☰
+      </div>
+      <ul className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
         <li>
           <img src='LogoIDHS.png' alt='Logo' className='logo' />
         </li>
-        <li onClick={() => { handleClickScroll("Home") }}>
-          <Link to="/homepage" className="list" >
-            Home
-          </Link>
+        <li onClick={() => scrollToSection("Home")}>
+          <span className="list">Home</span>
         </li>
-        <li onClick={() => { handleClickScroll("about") }}>
-          <Link to="/about" className="list">
-            About
-          </Link>
+        <li onClick={() => scrollToSection("about")}>
+          <span className="list">About</span>
         </li>
-        <li onClick={() => { handleClickScroll("product") }}>
-          <Link to="/product" className="list">
-            Product
-          </Link>
+        <li onClick={() => scrollToSection("product")}>
+          <span className="list">Product</span>
         </li>
-        <li onClick={() => { handleClickScroll("contact") }}>
-          <Link to="/contact" className="list">
-            Contact
-          </Link>
+        <li onClick={() => scrollToSection("contact")}>
+          <span className="list">Contact</span>
         </li>
       </ul>
     </div>
