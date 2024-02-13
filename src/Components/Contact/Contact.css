@@ -1,6 +1,7 @@
 .contact-container {
   text-align: center;
   padding: 20px;
+  background-color:#a091c9;
 }
 
 .contact-container p {
@@ -77,6 +78,7 @@ button:hover {
 .contact-details{
   margin-top: 50px;
   font-size: 25px;
+
 }
 .contact-details p{
   margin-top: 50px;

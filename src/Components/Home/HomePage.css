@@ -1,4 +1,3 @@
-
 /* HomePage.css */
 
 .home-container {
@@ -7,18 +6,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  justify-content: center;
- 
 }
 
 h1 {
   font-size: 24px;
-  color:#0eaf99;
+  color: #0eaf99;
+  margin-bottom: 10px;
 }
 
 p {
@@ -27,35 +26,39 @@ p {
   margin: 10px;
 }
 
-@media only screen and (max-width: 480px) {
+.images-slider {
+  margin-top: 20px;
+}
+
+.images-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
   h1 {
     font-size: 20px;
   }
 
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
-  home-container{
-    padding: 1%;
+
+  .home-container {
+    padding: 10px;
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   h1 {
     font-size: 22px;
   }
-  .images-slider{
-    height: 150px;
-    width: 150px;
-  }
 
   p {
-    font-size: 15px;
+    font-size: 18px;
   }
-}
-.images-slider {
-  display: block;
-  height: 400px;
-  width: 400px;
-  justify-content: center;
 }

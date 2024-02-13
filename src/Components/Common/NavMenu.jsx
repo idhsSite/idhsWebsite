@@ -29,9 +29,7 @@ const NavbarComponent = () => {
       ☰
     </div>
     <ul className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
-      <li>
-        <img src='LogoIDHS.png' alt='Logo' className='logo' />
-      </li>
+     
 
       <ScrollLink to="Home" spy={true} smooth={true} duration={500} className="list">
         <li onClick={scrollToTop}>Home</li>

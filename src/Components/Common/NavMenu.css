@@ -10,11 +10,12 @@ body {
 
 .nav-menu {
   list-style: none;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   background-color: #d8d4e5;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .nav-menu li {
@@ -22,6 +23,7 @@ body {
   color: #00B29A;
   cursor: pointer;
   font-size: 24px;
+  padding: 10px;
   
 }
 

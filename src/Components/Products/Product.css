@@ -17,6 +17,7 @@ header, section {
     gap: 20px; /* Adjust the gap between articles as needed */
     max-width: 100%; /* Allow the container to take full width on small screens */
     margin: 20px auto; /* Center the container and add some margin */
+    
   }
   
   /* Adjusted styles for individual articles in the services container */
@@ -27,6 +28,7 @@ header, section {
     border-radius: 8px;
     overflow: hidden; /* Ensure content doesn't overflow */
     transition: background-color 0.3s ease-in-out; /* Add a smooth background color transition */
+    background-color: #7258BC;
   }
   
   /* Background color change on hover */

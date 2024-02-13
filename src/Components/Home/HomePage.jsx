@@ -21,10 +21,14 @@ function HomePage() {
   return (
     <div className="home-container">
       <div className="content">
+        <div>
+
+       
         <h1>IDHS - Indian Digital Health Solutions</h1>
         <p>
           Explore our services to revolutionize healthcare. Join us on the journey towards a healthier and happier life.
         </p>
+         </div>
 
         <Slider {...carouselSettings}className='images-slider'>
           <div >

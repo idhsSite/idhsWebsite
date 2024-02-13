@@ -31,9 +31,16 @@ const Contact = () => {
         <div className="contact-details">
           <h2>Contact Details</h2>
           {/* Your contact details (website, phone, social accounts, email) go here */}
-          <p>Website: <a href="www.idhs.in"> www.idhs.in</a> </p>
-          <p>Phone: <a href='tel: +917232854850'>+917232854850</a></p>
+          <p>Website: www.idhs.in </p>
+          <p>Phone: +917232854850</p>
           <p>Email: kailashupchar.private@gmail.com</p>
+          <h3>
+            Folow us
+          </h3>
+          <p>insta</p>
+          <p>Facebook</p>
+          <p>twitter</p>
+
           {/* Add more details as needed */}
         </div>
 
