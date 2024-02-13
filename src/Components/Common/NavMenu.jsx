@@ -1,55 +1,56 @@
-// NavbarComponent.jsx
-
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './NavMenu.css';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link as RouterLink, useNavigate  } from 'react-router-dom';
 
 const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate  = useNavigate();
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-      });
-      setIsMenuOpen(false);
-    }
+  const scrollToTop = () => {
+    scroll.scrollToTop({
+      duration: 500,
+      smooth: 'easeInOutQuart',
+    });
+    setIsMenuOpen(false);
+  };
+  const handleNavLinkClick = (path) => {
+    setIsMenuOpen(false);
+    navigate(path);
   };
 
   return (
     <div>
-      <div className="menu-toggle" onClick={handleMenuToggle}>
-        ☰
-      </div>
-      <ul className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
-        <li>
-          <img src='LogoIDHS.png' alt='Logo' className='logo' />
-        </li>
-        <li onClick={() => scrollToSection("Home")}>
-        <Link to="/homepage" className="list">Home</Link>
-          
-        </li>
-        <li onClick={() => scrollToSection("about")}>
-        <Link to="/about" className="list">About</Link>
-        </li>
-        <li onClick={() => scrollToSection("product")}>
-        <Link to="/product" className="list">Product</Link>
-
-          <span className="list"></span>
-        </li>
-        <li onClick={() => scrollToSection("contact")}>
-        <Link to="/contact" className="list">Contact</Link>
-
-         
-        </li>
-      </ul>
+    <div className="menu-toggle" onClick={handleMenuToggle}>
+      ☰
     </div>
-  );
+    <ul className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+      <li>
+        <img src='LogoIDHS.png' alt='Logo' className='logo' />
+      </li>
+
+      <ScrollLink to="Home" spy={true} smooth={true} duration={500} className="list">
+        <li onClick={scrollToTop}>Home</li>
+      </ScrollLink>
+
+      <ScrollLink to="about" spy={true} smooth={true} duration={500} className="list">
+        <li onClick={() => handleNavLinkClick('/about')}>About</li>
+      </ScrollLink>
+
+      <ScrollLink to="product" spy={true} smooth={true} duration={500} className="list">
+        <li onClick={() => handleNavLinkClick('/product')}>Product</li>
+      </ScrollLink>
+
+      <ScrollLink to="contact" spy={true} smooth={true} duration={500} className="list">
+        <li onClick={() => handleNavLinkClick('/contact')}>Contact</li>
+      </ScrollLink>
+    </ul>
+  </div>
+  )
 };
 
 export default NavbarComponent;

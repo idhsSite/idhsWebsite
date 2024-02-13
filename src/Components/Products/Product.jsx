@@ -21,12 +21,12 @@ function Product() {
                 <li>Choose customized treatment packages for your diseases.</li>
               </ul>
               <button className="download-button" aria-label="Download User App">
-                Download Now
+                Download App
               </button>
             </div>
           </article>
           <article>
-            <h3>Hospital Management App</h3>
+            <h3>Hospital Management</h3>
             <div className="article-content">
               <ul>
                 <li>Manage accept/reject/reschedule appointments through the mobile app.</li>
@@ -34,20 +34,20 @@ function Product() {
                 <li>Create your own customized treatment package.</li>
               </ul>
               <button className="download-button" aria-label="Download Hospital Management App">
-                Download Now
+                Register Now
               </button>
             </div>
           </article>
           <article>
-            <h3>Doctors</h3>
+            <h3>Doctors Management App</h3>
             <div className="article-content">
               <ul>
-                <li>Find experienced doctors for various specialties.</li>
-                <li>Book appointments with preferred doctors.</li>
-                <li>Access detailed profiles and reviews of doctors.</li>
+                <li>Manage you hospitals/Clinics</li>
+                <li>Schedule your calender for Hospitls</li>
+                <li>Manage detailed profiles and check reviews.</li>
               </ul>
               <button className="download-button" aria-label="Download Doctors App">
-                Download Now
+                Download App
               </button>
             </div>
           </article>
