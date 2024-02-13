@@ -46,9 +46,10 @@ const Section = ({ title, content, imageSrc, altText }) => (
       </div>
 
       <div className="about-section">
-        <h3>Our Approach</h3>
+       
         <div className="flex-container">
           <div className="content">
+          <h3>Our Approach</h3>
             <p>At IDHS, we take a holistic approach to health and wellness. We believe that true health involves not just physical well-being but also mental, emotional, and spiritual well-being. That's why we are working to develop comprehensive digital solutions to access real health infrastructure plans that address all aspects of your health.</p>
           </div>
           <div className="image-container">

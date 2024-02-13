@@ -31,16 +31,21 @@ const NavbarComponent = () => {
           <img src='LogoIDHS.png' alt='Logo' className='logo' />
         </li>
         <li onClick={() => scrollToSection("Home")}>
-          <span className="list">Home</span>
+        <Link to="/homepage" className="list">Home</Link>
+          
         </li>
         <li onClick={() => scrollToSection("about")}>
-          <span className="list">About</span>
+        <Link to="/about" className="list">About</Link>
         </li>
         <li onClick={() => scrollToSection("product")}>
-          <span className="list">Product</span>
+        <Link to="/product" className="list">Product</Link>
+
+          <span className="list"></span>
         </li>
         <li onClick={() => scrollToSection("contact")}>
-          <span className="list">Contact</span>
+        <Link to="/contact" className="list">Contact</Link>
+
+         
         </li>
       </ul>
     </div>

@@ -7,6 +7,20 @@
   pointer-events: none;
 }
 
+@media (max-width: 768px) {
+  /* Styles for mobile devices */
+  .App-logo {
+    height: 20vmin;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for tablets */
+  .App-logo {
+    height: 30vmin;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

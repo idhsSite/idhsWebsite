@@ -87,18 +87,20 @@ header, section {
     .services-container {
       flex-direction: row; /* Revert to horizontal layout for tablets and larger screens */
       justify-content: center; /* Center-align articles in the container */
+      
     }
   
     .services-container article {
       max-width: 300px; /* Adjust the maximum width for individual articles on tablets */
     }
   }
-  
-  /* Media query for larger screens */
-  @media only screen and (min-width: 900px) {
-    /* Adjust styles for larger screens here */
-    .services-container article {
-      max-width: 400px; /* Further adjust the maximum width for individual articles on larger screens */
+ 
+  @media only screen and (min-width: 768px) {
+    .contact-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-right: 20px;
     }
   }
   

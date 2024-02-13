@@ -1,25 +1,61 @@
-.home{
-    background-color: #7258BC;
-    margin: 0%;
-}
+
+/* HomePage.css */
+
 .home-container {
-  background-color: #f0f0f0; /* Set your desired background color */
-  padding: 20px; /* Add some padding for better aesthetics */
-  height: 500px; /* Set your desired height */
+  background-color: #7258BC;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
-  
-  .content {
-    text-align: center;
-  }
-  
+
+.content {
+  text-align: center;
+  justify-content: center;
+ 
+}
+
+h1 {
+  font-size: 24px;
+  color:#0eaf99;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 480px) {
   h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 20px;
   }
-  
+
   p {
-    font-size: 1.2em;
+    font-size: 14px;
   }
+  home-container{
+    padding: 1%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 22px;
+  }
+  .images-slider{
+    height: 150px;
+    width: 150px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+.images-slider {
+  display: block;
+  height: 400px;
+  width: 400px;
+  justify-content: center;
+}

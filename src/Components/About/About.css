@@ -3,6 +3,7 @@
 .about-section {
   margin-bottom: 30px; /* Add spacing between sections */
   text-align: center; /* Center align content */
+  margin-left: 10px;
 }
 
 .flex-container {
@@ -11,25 +12,28 @@
   justify-content: space-around;
   flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
   margin-top: 20px; /* Add space between about-section and flex-container */
+  padding: 40px;
 }
 
 .content {
   flex: 1;
   max-width: 600px; /* Adjust the maximum width of the content area */
   padding: 20px;
-  text-align: left; /* Adjust text alignment within the content area */
+  text-align: center; /* Adjust text alignment within the content area */
   margin-right: 10px; /* Adjust the right margin to reduce space between content and image */
 }
 
 .image-container {
   flex: 1;
-  max-width: 400px; /* Adjust the maximum width of the image container */
+  max-width: 500px; /* Adjust the maximum width of the image container */
 }
 
 .image-container img {
+  margin-right: 100px;
   width: 100%;
   height: auto;
   border-radius: 8px; /* Optional: Add border-radius to images */
+  border: solid red
 }
 h3 {
   font-size: 24px; /* Adjust the font size */

@@ -1,24 +1,42 @@
 import React from 'react';
 import HomePage from './Components/Home/HomePage';
 import About from './Components/About/About';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Contact from './Components/Contact/Contact';
 import NavMenu from './Components/Common/NavMenu';
-import { Link, Route, Routes } from "react-router-dom";
 import Product from "./Components/Products/Product";
 
 function App() {
   return (
-    <div className="App">
-      <NavMenu />
-      <HomePage/>
-      <Product/>
-      <About/>
-      <Contact/>
+    <BrowserRouter>
+<NavMenu />
+<HomePage/>
+<Product/>
+<About/>
+<Contact/>
 
-
+    <Routes>
       
-    </div>
+      
+     
+     <Route path="/" exact component={HomePage} />
+     <Route path="/about" exact component={About} />
+      <Route path="/product" exact component={Product} />
+  
+      <Route path="/contact" exact component={Contact} />
+
+
+   
+
+
+
+
+    </Routes>
+   
+    
+    </BrowserRouter>
+    
   )
 }
 
