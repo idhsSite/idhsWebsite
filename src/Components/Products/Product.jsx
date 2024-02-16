@@ -2,8 +2,20 @@
 
 import React from 'react';
 import './Product.css'; // Import your CSS file
+import FAQ from '../FAQ/FAQ';
 
 function Product() {
+
+  const faqData = [
+    { question: 'Who we are?', answer: 'We are Healthtech startup. currently we are operating in Bihar major districts like.....' },
+    { question: 'What services does your health startup provide?', answer: '...' },
+    { question: 'How schedule a appointment work?', answer: '...' },
+    { question: 'What services does your health startup provide?', answer: '...' },
+    { question: 'How can I schedule a telemedicine appointment?', answer: '...' },
+
+    { question: 'How can I schedule a telemedicine appointment?', answer: '...' },
+    // Add more FAQ items as needed
+  ];
   return (
     <div id='product'>
       <header>
@@ -33,9 +45,10 @@ function Product() {
                 <li>Manage hospital's doctors, staff, and facilities within a hospital/clinic.</li>
                 <li>Create your own customized treatment package.</li>
               </ul>
-              <button className="download-button" aria-label="Download Hospital Management App">
+              <a href='http://50.18.119.35/idhs/hospital/login'><button className="download-button" aria-label="Download Hospital Management App">
                 Register Now
               </button>
+              </a>
             </div>
           </article>
           <article>
@@ -51,8 +64,10 @@ function Product() {
               </button>
             </div>
           </article>
+          
         </div>
       </section>
+      <FAQ faqData={faqData}/>
     </div>
   );
 }

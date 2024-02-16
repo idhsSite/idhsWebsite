@@ -1,7 +1,11 @@
 // Contact.jsx
 
 import React from 'react';
-import './Contact.css'; // Import your CSS file
+import './Contact.css';
+import Facebook from '../../Images/Facebook.png'
+import Instagram from '../../Images/instagram.png'
+import LinkdIn from '../../Images/linkedin.png'
+
 
 const Contact = () => {
   return (
@@ -37,9 +41,16 @@ const Contact = () => {
           <h3>
             Folow us
           </h3>
-          <p>insta</p>
-          <p>Facebook</p>
-          <p>twitter</p>
+     
+         
+         <a href='https://www.facebook.com/IDHSV1'> <img src={Facebook} alt=''/> </a>
+         <a href='https://www.instagram.com/idhs.in/'> <img src={Instagram} alt=''/></a>
+
+          <a href='https://www.linkedin.com/company/99288687'>
+          <img src={LinkdIn} alt=''/>
+            </a>
+
+         
 
           {/* Add more details as needed */}
         </div>

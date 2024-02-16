@@ -9,14 +9,17 @@ import Product from "./Components/Products/Product";
 
 import ExampleComponent from "./Components/ExampleComponent";
 
+
 function App() {
+
+  
   return (
 <BrowserRouter>
-<ExampleComponent />
 <NavMenu/>
       <HomePage />
       <About />
       <Product />
+      
       <Contact />
 </BrowserRouter>
 

@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import './NavMenu.css';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
@@ -24,7 +25,12 @@ const NavbarComponent = () => {
   };
 
   return (
-    <div>
+    <div className='nav-container'>
+      <div className='nav-1'>
+        <span>Download App</span>
+       <a href='http://50.18.119.35/idhs/hospital/login'> <span>Register as hospital</span></a>
+
+      </div>
     <div className="menu-toggle" onClick={handleMenuToggle}>
       ☰
     </div>
