@@ -1,0 +1,68 @@
+/* About.css */
+
+
+
+
+.content {
+
+    max-width: 600px;
+
+  
+    
+   
+  }
+  .Comman-cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+   
+  }
+  .Comman-cart li{
+    justify-content: left;
+  }
+.FAQ-Form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  align-items: flex-start;
+ 
+
+}
+  
+  
+  
+  
+  
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .Comman-cart {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .content,
+    .image-container {
+      max-width: 100%;
+    }
+  
+   
+  }
+
+
+
+  /* User form CSS */
+  .FAQ-Form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 200px auto;
+    justify-content: space-between;
+  }
+
+
+
+  

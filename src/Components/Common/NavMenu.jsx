@@ -4,6 +4,7 @@ import './NavMenu.css';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { Link as RouterLink, useNavigate  } from 'react-router-dom';
 
+
 const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate  = useNavigate();

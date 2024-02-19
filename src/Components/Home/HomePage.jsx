@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './HomePage.css';
-import MissionImage from '../../Images/Misson.png'
+import MissionImage from '../../Images/Mission.png'
 import TeamImage from '../../Images/Team.png'
 import ApproachImage from '../../Images/Approach.png'
 

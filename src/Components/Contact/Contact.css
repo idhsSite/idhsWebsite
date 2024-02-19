@@ -1,89 +1,47 @@
-.contact-container {
+/* Contact.css */
+
+#contact {
   text-align: center;
   padding: 20px;
-  background-color:#a091c9;
+  background-color: beige;
 }
 
-.contact-container p {
-  font-size: 16px;
-  margin-bottom: 20px;
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.form-group {
-  margin-bottom: 15px;
+.contact-details,
+.contact-map {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  border: 1px solid #45a049;
-}
-
-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.follow-details {
+  display: flex;
+  justify-content: space-around;
   margin-top: 20px;
 }
 
-button:hover {
-  background-color: #45a049;
-}
-
-@media only screen and (min-width: 768px) {
+/* Media query for tablets */
+@media only screen and (max-width: 768px) {
   .contact-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
-  .form-group {
-    width: 48%;
-  }
-
-  label,
-  input,
-  textarea {
-    width: 100%;
-  }
-
-  .contact-form {
-    background-color: beige;
-    width: 50%;
-    height: auto;
-    margin-top: 50px;
-    padding: 20px;
-    text-align: left;
+  .contact-details,
+  .contact-map {
+    max-width: 100%;
   }
 }
 
-/* Additional styling for better layout */
-.contact-form label {
-  margin-top: 10px;
-  display: block;
-  font-size: 25px;
-}
-.contact-details{
-  margin-top: 50px;
-  font-size: 25px;
-
-}
-.contact-details p{
-  margin-top: 50px;
-}
-.contact-map{
-  margin-top: 50px;
-  font-size: 25px;
+/* Media query for mobile */
+@media only screen and (max-width: 480px) {
+  .follow-details {
+    flex-direction: column;
+    align-items: center;
+  }
 }

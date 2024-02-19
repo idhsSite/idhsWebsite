@@ -7,25 +7,29 @@ import Contact from './Components/Contact/Contact';
 import NavMenu from './Components/Common/NavMenu';
 import Product from "./Components/Products/Product";
 
-import ExampleComponent from "./Components/ExampleComponent";
 
 
 function App() {
 
-  
-  return (
-<BrowserRouter>
-<NavMenu/>
-      <HomePage />
-      <About />
-      <Product />
-      
-      <Contact />
-</BrowserRouter>
 
+  return (
+    <BrowserRouter>
+    <>
+   
+      <NavMenu />
+      <HomePage />
+      <Product />
+      <About />
+
+
+      <Contact />
+      </>
+    </BrowserRouter>
     
-      
-  
+
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 /* HomePage.css */
 
 .home-container {
-  background-color: #7258BC;
+background-image: url("../../Images/Homebackground.jpg");
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@
 
 h1 {
   font-size: 24px;
-  color: #0eaf99;
+  color: #71aba4;
   margin-bottom: 10px;
 }
 
@@ -24,6 +24,7 @@ p {
   font-size: 20px;
   text-align: center;
   margin: 10px;
+  color: #689c96;
 }
 
 .images-slider {

@@ -50,3 +50,6 @@
     transform: rotate(360deg);
   }
 }
+.three{
+  background-image: url("../src/Images/Homebackground.jpg");
+}
