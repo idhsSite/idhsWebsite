@@ -6,7 +6,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-
 export const CommanCart = ({ imageSrc, title, description, action1Label, action2Label }) => {
   return (
     <Card sx={{ maxWidth: 500 }}>

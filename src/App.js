@@ -8,7 +8,6 @@ import UserQuery from './pages/UserQuery';
 import Contact from './pages/Contact';
 // import './App.css';
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -17,12 +16,11 @@ function App() {
       <HomePage />
       <Product />
       <About />
-      <UserQuery/>
+      <UserQuery />
       <Contact />
       </>
     </BrowserRouter>
   );
 }
-
 
 export default App
