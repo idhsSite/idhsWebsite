@@ -1,9 +1,9 @@
 import React from 'react'
-import FAQ from '../Components/Common/FAQ'
-import Blogs from '../Components/Common/Blogs'
+import FAQ from '../components/common/FAQ'
+import Blogs from '../components/common/Blogs'
 
-import '../Pages/Pages.css'
-import UserContactForm from '../Components/Common/UserContactForm';
+import './Pages.css'
+import UserContactForm from '../components/common/UserContactForm';
 
 
 function UserQuery() {

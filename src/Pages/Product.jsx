@@ -1,8 +1,6 @@
-// Product.js
-
 import React from 'react';
-import { CommanCart} from '../Components/Common/CommanCart';
-import '../Pages/Pages.css'
+import { CommanCart} from '../components/common/CommanCart';
+import './Pages.css'
 
 
 function Product() {
@@ -53,8 +51,6 @@ function Product() {
       // Add more services as needed
     ];
 
-   
-
     return (
       <div>
         <div id='product'>
@@ -73,7 +69,6 @@ function Product() {
             ))}
           </div>
         </div>
-       
       </div>
     );
   };

@@ -1,42 +1,26 @@
 import React from 'react';
-import HomePage from './Pages/HomePage';
-import About from './Pages/About';
 import { BrowserRouter } from 'react-router-dom';
-
-import Contact from './Pages/Contact';
-import NavMenu from './Components/Common/NavMenu';
-import Product from "./Pages/Product";
-import UserQuery from './Pages/UserQuery';
-
+import NavMenu from './components/common/NavMenu';
+import HomePage from './pages/HomePage';
+import Product from "./pages/Product";
+import About from './pages/About';
+import UserQuery from './pages/UserQuery';
+import Contact from './pages/Contact';
+// import './App.css';
 
 
 function App() {
-
-
   return (
     <BrowserRouter>
-    <NavMenu />
-    <>
-   
-      
+    <>     
+      <NavMenu />
       <HomePage />
       <Product />
       <About />
       <UserQuery/>
-
-
       <Contact />
       </>
     </BrowserRouter>
-    
-
-
-
-
-
-
-
-
   );
 }
 

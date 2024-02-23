@@ -1,7 +1,8 @@
 import React, { createContext, useState, useContext } from 'react';
-
+import { createTheme } from '@mui/material/styles';
 const ThemeContext = createContext();
 
+const theme = createTheme();
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState({
     primaryColor: '#7258BC',
@@ -22,3 +23,4 @@ export const ThemeProvider = ({ children }) => {
 export const useTheme = () => {
   return useContext(ThemeContext);
 };
+export default theme;

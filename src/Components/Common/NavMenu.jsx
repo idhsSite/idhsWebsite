@@ -14,6 +14,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@emotion/react';
+// import theme from '../../theme';
+import logo from '../../images/LogoIDHS.png';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About','Products', 'Contact'];
@@ -29,7 +33,8 @@ function NavMenu(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        IDHS
+      IDHS
+      {/* <img src={logo} alt="IDHS" style={{ width:'auto', height:'auto', maxWidth: '50px', maxHeight: '100px' }} /> */}
       </Typography>
       <Divider />
       <List>
@@ -45,8 +50,16 @@ function NavMenu(props) {
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;
+  const theme = createTheme({
+    palette:{
+      primary:{
+        main: '#7258BC',
+      },
+    },
+  });
 
   return (
+<ThemeProvider theme={theme}>
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar component="nav">
@@ -65,7 +78,7 @@ function NavMenu(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            IDHS
+          <img src={logo} alt="IDHS" style={{ width:'auto', height:'auto', maxWidth: '50px', maxHeight: '100px' }} />
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
@@ -98,6 +111,7 @@ function NavMenu(props) {
         
       </Box>
     </Box>
+    </ThemeProvider>
   );
 }
 

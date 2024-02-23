@@ -1,8 +1,8 @@
 import React from 'react';
-import Facebook from '../../src/Images/instagram.png';
-import Instagram from '../../src/Images/instagram.png';
-import LinkdIn from '../../src/Images/linkedin.png';
-import '../Pages/Pages.css'
+import Facebook from '../../src/images/instagram.png';
+import Instagram from '../../src/images/instagram.png';
+import LinkdIn from '../../src/images/linkedin.png';
+import './Pages.css'
 
 const Contact = () => {
   return (

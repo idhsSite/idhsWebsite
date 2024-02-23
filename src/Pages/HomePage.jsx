@@ -2,10 +2,10 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Crouser3 from '../../src/Images/Crouser3.png'
-import Crouser1 from '../../src/Images/Crouser1.png'
-import Crouser2 from '../../src/Images/Crouser2.png'
-import '../Pages/Pages.css'
+import Crouser3 from '../../src/images/Crouser3.png'
+import Crouser1 from '../../src/images/Crouser1.png'
+import Crouser2 from '../../src/images/Crouser2.png'
+import './Pages.css'
 
 function HomePage() {
   const carouselSettings = {
@@ -22,13 +22,11 @@ function HomePage() {
     <div className="home-container">
       <div className="content">
         <div>
-
-       
         <h1>IDHS - Indian Digital Health Solutions</h1>
         <p>
           Explore our services to revolutionize healthcare. Join us on the journey towards a healthier and happier life.
         </p>
-         </div>
+        </div>
 
         <Slider {...carouselSettings}className='images-slider'>
           
