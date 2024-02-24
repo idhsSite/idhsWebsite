@@ -78,7 +78,7 @@ function NavMenu(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-          <img src={logo} alt="IDHS" style={{ width:'auto', height:'auto', maxWidth: '50px', maxHeight: '100px' }} />
+          <img src={logo} alt="IDHS" style={{ width:'auto', height:'auto', maxWidth: '50px', maxHeight: '40px' }} />
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (

@@ -1,5 +1,6 @@
 import React from 'react';
 import { CommanCart} from '../components/common/CommanCart';
+import Typography from '@mui/material/Typography';
 import './Pages.css'
 
 
@@ -9,12 +10,14 @@ function Product() {
       {
         title: 'User App',
         description: (
-          <ul>
-            <li>Review: <span>4.3 *****</span></li>
-            <li>Book appointments through the mobile app.</li>
-            <li>Check and book emergency services near your location.</li>
-            <li>Choose customized treatment packages for your diseases.</li>
-          </ul>
+          <Typography variant="body2" color="text.secondary">
+            <ul>
+              <li>Review: <span>4.3 *****</span></li>
+              <li>Book appointments through the mobile app.</li>
+              <li>Check and book emergency services near your location.</li>
+              <li>Choose customized treatment packages for your diseases.</li>
+            </ul>
+          </Typography>
         ),
         action1Label: 'Download App',
         action2Label: 'Learn More',
@@ -23,12 +26,14 @@ function Product() {
       {
         title: 'Hospital Management Dashboard',
         description: (
-          <ul>
-            <li>Review: <span>4.3 *****</span></li>
-            <li>Manage accept/reject/reschedule appointments through the mobile app.</li>
-            <li>Manage hospital's doctors, staff, and facilities within a hospital/clinic.</li>
-            <li>Create your own customized treatment package.</li>
-          </ul>
+          <Typography variant="body2" color="text.secondary">
+            <ul>
+              <li>Review: <span>4.3 *****</span></li>
+              <li>Manage accept/reject/reschedule appointments through the mobile app.</li>
+              <li>Manage hospital's doctors, staff, and facilities within a hospital/clinic.</li>
+              <li>Create your own customized treatment package.</li>
+            </ul>
+          </Typography>
         ),
         action1Label: 'Register now',
         action2Label: 'Learn More',
@@ -37,12 +42,14 @@ function Product() {
       {
         title: 'Doctors Management App',
         description: (
-          <ul>
-            <li>Review: <span>4.3 *****</span></li>
-            <li>Manage your hospitals/Clinics</li>
-            <li>Schedule your calendar for Hospitals</li>
-            <li>Manage detailed profiles and check reviews.</li>
-          </ul>
+          <Typography variant="body2" color="text.secondary">
+            <ul>
+              <li>Review: <span>4.3 *****</span></li>
+              <li>Manage your hospitals/Clinics</li>
+              <li>Schedule your calendar for Hospitals</li>
+              <li>Manage detailed profiles and check reviews.</li>
+            </ul>
+          </Typography>
         ),
         action1Label: 'Download App',
         action2Label: 'Learn More',

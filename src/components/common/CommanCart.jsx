@@ -10,6 +10,7 @@ export const CommanCart = ({ imageSrc, title, description, action1Label, action2
   return (
     <Card sx={{ maxWidth: 500 }}>
       <CardMedia
+        component="img"
         sx={{ height: 300 }}
         image={imageSrc}
         title={title}

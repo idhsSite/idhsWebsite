@@ -21,11 +21,10 @@ function UserQuery() {
   return (
     <div className='UserQuery'>
         <h1>We are happy to help you</h1>
-         <div className="UserQuery-container">
+          <div className="UserQuery-container">
           <FAQ faqData={faqData} />
           <Blogs />
           <UserContactForm/>
-          
         </div>
     </div>
   )
