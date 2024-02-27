@@ -1,99 +1,100 @@
+/* Home page css */
 .home-container {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-  }
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive design for mobile and tablet */
+@media screen and (max-width: 768px) {
   .content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  @media screen and (max-width: 768px) {
-    .content {
       padding: 20px;
-    }
-  
-    h1 {
-      font-size: 2em;
-    }
-  
-    p {
+  }
+
+  h1 {
       font-size: 1em;
-    }
-  
-    .images-slider {
+  }
+
+  p {
+      font-size: 1em;
+  }
+
+  .images-slider {
       margin-top: 20px;
-    }
-    .Comman-cart {
-        flex-direction: column;
-        align-items: center;
-      }
-      .contact-container {
-        flex-direction: column;
-        align-items: center;
-      }
-    
-      .contact-details,
-      .follow-details,
-      .contact-map {
-        width: 100%;
-      }
-      .UserQuery-container {
-        flex-direction: column;
-        align-items: center;
-      }
-  }    
-  #product {
-    text-align: center;
-    padding: 20px;
-    background-color: #f2f2f2;
-  }
-  
-  .Comman-cart {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
   }
 
-
-
-  /* Contact page css */
-  #contact {
-    text-align: center;
-    padding: 20px;
-    background-color: #be5e5e;
+  .Comman-cart,
+  .contact-container,
+  .UserQuery-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
   }
-  
-  .contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 10px;
-  }
-  
+
   .contact-details,
   .follow-details,
   .contact-map {
-    flex: 1;
-    margin: 10px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      margin: 10px 0;
   }
+}
 
-  /* UserQuery.css */
+/* product.js file css */
 
+#product {
+  text-align: center;
+  
+  
+}
+
+.Comman-cart {
+  display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-evenly;
+ margin: 10px;
+  
+}
+
+/* Contact page css */
+#contact {
+  text-align: center;
+  padding: 20px;
+  background-color: #be5e5e;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.contact-details,
+.follow-details,
+.contact-map {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* UserQuery.css */
 .UserQuery {
-    text-align: center;
-    padding: 20px;
-    background-color: #f2f2f2;
-  }
-  
-  .UserQuery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.UserQuery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}

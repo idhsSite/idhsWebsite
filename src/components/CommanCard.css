@@ -1,0 +1,20 @@
+@media screen and (max-width: 600px) {
+    Card {
+      width: 90vw;
+    }
+  
+    Box {
+      padding: 2;
+    }
+   
+  
+    Typography {
+      font-size: 0.5rem;
+    }
+  
+    Button {
+      width: 50%;
+      margin-top: 10px;
+    }
+  }
+  

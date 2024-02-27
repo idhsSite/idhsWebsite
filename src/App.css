@@ -1,55 +1,23 @@
-.App {
-  text-align: center;
+/* AppStyles.css */
+
+/* Apply styles to the entire body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Apply a common style to your pages */
+.page-container {
+  padding: 20px;
 }
 
-@media (max-width: 768px) {
-  /* Styles for mobile devices */
-  .App-logo {
-    height: 20vmin;
-  }
+/* Apply a common style to your navigation */
+.nav-container {
+  /* Your navigation styles here */
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* Styles for tablets */
-  .App-logo {
-    height: 30vmin;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.three{
-  background-image: url("../src/Images/Homebackground.jpg");
+/* Apply a common style to your menu items */
+.menu-item {
+  /* Your menu item styles here */
 }
