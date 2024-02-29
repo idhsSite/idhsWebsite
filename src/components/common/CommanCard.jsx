@@ -8,7 +8,7 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import "../CommanCard.css"
+
 
 export const CommanCard = ({ imageSrc, title, description, action1Label, action2Label }) => {
   return (

@@ -1,38 +1,39 @@
 import React from 'react';
-
-import NavMenu from './components/common/NavMenu';
-import Home from './pages/Home';
+import NavMenu from "../src/components/common/NavMenu"
+import Home from './pages/HomePage';
 import Services from "./pages/Services";
 import About from './pages/About';
-
 import Contact from './pages/Contact';
 import { Element } from 'react-scroll';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme/theme.js'; // Adjust the import path based on your project structure
+import CssBaseline from '@mui/material/CssBaseline'; // Helps with consistent styling acros
+import Header from "../src/components/Header.jsx"
+import HomePage from './pages/HomePage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from './components/common/Footer.jsx';
 
 
 
-// import './App.css';
-
-
-function App() {
+const App = () => {
   return (
-    <>
-      <NavMenu />
-      {/* Using Element from react-scroll to define page sections */}
-      <Element name="home" className="element">
-        <Home />
-      </Element>
-     
-      <Element name="services" className="element">
-        <Services />
-      </Element>
-      <Element name="about" className="element">
-        <About />
-      </Element>
-      <Element name="contact" className="element">
-        <Contact />
-      </Element>
-      </>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Router>
+     <Header/>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<About />} />
+
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer/>
+    </Router>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
+
+

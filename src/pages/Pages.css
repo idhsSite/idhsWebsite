@@ -23,14 +23,11 @@
       font-size: 1em;
   }
 
-  .images-slider {
-      margin-top: 20px;
-  }
-
-  .Comman-cart,
   .contact-container,
   .UserQuery-container {
+    display: flex;
       flex-direction: column;
+     
       align-items: center;
       padding: 20px;
   }
@@ -51,12 +48,13 @@
   
 }
 
-.Comman-cart {
+.Comman-card {
   display: flex;
  flex-direction: row;
+ justify-content: space-between;
  align-items: center;
- justify-content: space-evenly;
- margin: 10px;
+ margin: 50px;
+ padding: 20px;
   
 }
 
@@ -98,3 +96,4 @@
   justify-content: space-around;
   margin-top: 20px;
 }
+
