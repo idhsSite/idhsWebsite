@@ -34,7 +34,7 @@ const HomePage = () => {
         }}
       >
         <Typography variant="h2" gutterBottom>
-          Making health services accessibale
+          Making health services accessible
         </Typography>
         <Typography variant="h5" sx={{ mb: 3 }}>
           Book your appointment.

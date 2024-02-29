@@ -91,10 +91,14 @@ const Contact = () => {
       <Box sx={{ mt: 4, width: '100%', height: '300px' }}>
         <iframe
           title="Our Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.593255972654!2d-122.41941548468183!3d37.774929279759206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c32500001%3A0x6678eda22e8f04d0!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1612339636048!5m2!1sen!2sbd"
+          // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.593255972654!2d-122.41941548468183!3d37.774929279759206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c32500001%3A0x6678eda22e8f04d0!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1612339636048!5m2!1sen!2sbd"
+          src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.593255972654!2d-122.41941548468183!3d37.774929279759206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c32500001%3A0x6678eda22e8f04d0!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1612339636048!5m2!1sen!2sbd`}
           style={{ border: 0, width: '100%', height: '100%' }}
           allowFullScreen=""
           loading="lazy"
+          aria-hidden="false"
+          tabIndex="0"
+          rel="noopener noreferrer"
         />
       </Box>
        

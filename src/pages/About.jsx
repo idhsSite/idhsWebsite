@@ -72,9 +72,6 @@ const About = () => {
             <Typography variant="h5" component="h2" gutterBottom>
               Our Vision
             </Typography>
-            <Typography variant="h5" component="h2" gutterBottom>
-              Our Vision
-            </Typography>
             <Typography variant="body1" paragraph>
               {isExpanded ? (
                 `At IDHS, we're dedicated to revolutionizing healthcare accessibility nationwide. Our vision is ambitious: 
