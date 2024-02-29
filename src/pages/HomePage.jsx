@@ -16,9 +16,6 @@ const services = [
 const HomePage = () => {
   return (
     <ShowMoreProvider>
-
-    
-
       <Box
         sx={{
           backgroundImage: `url(${HeroImage})`,
@@ -55,8 +52,6 @@ const HomePage = () => {
       </Container>
       <Contact/>
       </ShowMoreProvider>
-      
-  
   );
 };
 

@@ -61,9 +61,6 @@ const About = () => {
     both rural and urban areas. We strive to bridge the gap, ensuring that everyone, regardless of their location...`
               )}
               <Button onClick={toggleExpanded}>{isExpanded ? 'See Less' : 'See More'}</Button>
-
-
-
             </Typography>
           </Paper>
         </Grid>
