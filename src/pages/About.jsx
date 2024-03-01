@@ -1,6 +1,9 @@
 import React from 'react';
+// import React, { useState } from 'react';
 import { Container, Typography, Box, Grid, Paper, Button } from '@mui/material';
 import Achievements from "../components/Achievements"
+
+// Using global state management for 'See More' button from ShowMore.jsx file, and also have Local state management code below(Commented Code).
 import { useShowMore } from "../context/ShowMore"
 
 
@@ -11,7 +14,19 @@ const operatingCities = [
 ];
 
 const About = () => {
-  const { isExpanded, toggleExpanded } = useShowMore();
+  const { expandedSections, toggleExpanded } = useShowMore();
+  // const [introExpanded, setIntroExpanded] = useState(false);
+  // const [missionExpanded, setMissionExpanded] = useState(false);
+  // const [visionExpanded, setVisionExpanded] = useState(false);
+  // const [chooseUsExpanded, setChooseUsExpanded] = useState(false);
+
+  // const toggleIntroExpanded = () => setIntroExpanded(!introExpanded);
+  // const toggleMissionExpanded = () => setMissionExpanded(!missionExpanded);
+  // const toggleVisionExpanded = () => setVisionExpanded(!visionExpanded);
+  // const toggleChooseUsExpanded = () => setChooseUsExpanded(!chooseUsExpanded);
+
+
+  // const { isExpanded, toggleExpanded } = useShowMore();
   return (
     <Container maxWidth="lg">
       <Box my={4} id="about-introduction">
@@ -19,7 +34,7 @@ const About = () => {
           About IDHS
         </Typography>
         <Typography variant="body1" paragraph>
-          {isExpanded ? (
+          {expandedSections.introExpanded ? (
             `IDHS is on a mission to transform healthcare in Bihar, 
             making it simpler and more accessible for everyone. 
             Our innovative app is the key to unlocking a new world of 
@@ -28,11 +43,11 @@ const About = () => {
           ) : (
             `IDHS is on a mission to transform healthcare in Bihar...`
           )}
-          <Button onClick={toggleExpanded}>{isExpanded ? 'See Less' : 'See More'}</Button>
-
+          {/* <Button onClick={toggleIntroExpanded}>{introExpanded ? 'See Less' : 'See More'}</Button> */}
+          <Button onClick={() => toggleExpanded('introExpanded')}>{expandedSections.introExpanded ? 'See Less' : 'See More'}</Button>
         </Typography>
         <Typography>
-          {isExpanded ? (
+          {expandedSections.intro1Expanded ? (
             `Our dedicated team, comprising healthcare professionals, tech enthusiasts, and customer support specialists, 
     works tirelessly to ensure that our platform is not just functional but user-friendly and reliable. 
     We're driven by the vision of a Bihar where quality healthcare is not a luxury but a standard, easily accessible to all, 
@@ -41,7 +56,8 @@ const About = () => {
             `Our dedicated team, comprising healthcare professionals, tech enthusiasts, and customer support specialists, 
     works tirelessly to ensure that our platform is not just functional but user-friendly and reliable.`
           )}
-          <Button onClick={toggleExpanded}>{isExpanded ? 'See Less' : 'See More'}</Button>
+          {/* <Button onClick={toggleExpanded}>{isExpanded ? 'See Less' : 'See More'}</Button> */}
+          <Button onClick={() => toggleExpanded('intro1Expanded')}>{expandedSections.intro1Expanded ? 'See Less' : 'See More'}</Button>
         </Typography>
       </Box>
       <Grid container spacing={3}>
@@ -51,7 +67,8 @@ const About = () => {
               Our Mission
             </Typography>
             <Typography variant="body1" paragraph>
-              {isExpanded ? (
+              {/* {missionExpanded ? ( */}
+              {expandedSections.missionExpanded ? (
                 `At IDHS, we are driven by a singular mission: to revolutionize healthcare accessibility in 
     both rural and urban areas. We strive to bridge the gap, ensuring that everyone, regardless of their location, 
     has access to the care they need and deserve. In essence, IDHS is more than just an app; it's a lifeline,
@@ -60,7 +77,8 @@ const About = () => {
                 `At IDHS, we are driven by a singular mission: to revolutionize healthcare accessibility in 
     both rural and urban areas. We strive to bridge the gap, ensuring that everyone, regardless of their location...`
               )}
-              <Button onClick={toggleExpanded}>{isExpanded ? 'See Less' : 'See More'}</Button>
+              {/* <Button onClick={toggleMissionExpanded}>{missionExpanded ? 'See Less' : 'See More'}</Button> */}
+          <Button onClick={() => toggleExpanded('missionExpanded')}>{expandedSections.missionExpanded ? 'See Less' : 'See More'}</Button>
             </Typography>
           </Paper>
         </Grid>
@@ -70,7 +88,8 @@ const About = () => {
               Our Vision
             </Typography>
             <Typography variant="body1" paragraph>
-              {isExpanded ? (
+              {/* {visionExpanded  ? ( */}
+              {expandedSections.visionExpanded  ? (
                 `At IDHS, we're dedicated to revolutionizing healthcare accessibility nationwide. Our vision is ambitious: 
         to extend our cutting-edge healthcare solutions and unmatched customer support to every community across the country,
         ensuring that no matter your location, premium healthcare services are always within reach. Our goal is for IDHS to become
@@ -79,7 +98,8 @@ const About = () => {
                 `At IDHS, we're dedicated to revolutionizing healthcare accessibility nationwide. Our vision is ambitious: 
         to extend our cutting-edge healthcare solutions and unmatched customer support to every community across the country...`
               )}
-              <Button onClick={toggleExpanded}>{isExpanded ? 'See Less' : 'See More'}</Button>
+              {/* <Button onClick={toggleVisionExpanded}>{visionExpanded ? 'See Less' : 'See More'}</Button> */}
+          <Button onClick={() => toggleExpanded('visionExpanded')}>{expandedSections.visionExpanded ? 'See Less' : 'See More'}</Button>
 
             </Typography>
           </Paper>
@@ -90,7 +110,8 @@ const About = () => {
               Why Choose Us?
             </Typography>
             <Typography variant="body1" paragraph>
-              {isExpanded ? (
+              {/* {chooseUsExpanded ? ( */}
+              {expandedSections.chooseUsExpanded ? (
                 `Choosing IDHS is like picking the best path for your health journey. We make sure that everyone, no matter where you are, can easily find and use
         top-notch healthcare services. With our IDHS app, getting medical help is as simple as a click, making us a favorite for care that’s both smart and
         straightforward. Our app is packed with the latest tech to connect you with doctors and keep your health records safe and easy to reach. Plus, 
@@ -100,7 +121,8 @@ const About = () => {
                 `Choosing IDHS is like picking the best path for your health journey. We make sure that everyone, no matter where you are, can easily find and use
         top-notch healthcare services.`
               )}
-              <Button onClick={toggleExpanded}>{isExpanded ? 'See Less' : 'See More'}</Button>
+              {/* <Button onClick={toggleChooseUsExpanded}>{chooseUsExpanded ? 'See Less' : 'See More'}</Button> */}
+          <Button onClick={() => toggleExpanded('chooseUsExpanded')}>{expandedSections.chooseUsExpanded ? 'See Less' : 'See More'}</Button>
 
             </Typography>
             <Button variant="contained" color="primary">Download app</Button>

@@ -69,8 +69,8 @@ export const HomeServices = () => {
 <Card sx={{ display: 'flex', width: '85vw', margin: '0 auto', maxWidth: '1000px', background: 'linear-gradient(to right,  #00B29A, #9459BD)', borderRadius: '20px' }}>
       <Box sx={{ display: 'flex', flexDirection: 'column', padding: 3, color: 'white', textAlign: 'center' }}>
         <Typography variant="h2" gutterBottom component="div">
-         Book health services with IDHS app.
-        </Typography >
+          Book health services with IDHS app.
+        </Typography>
         <Typography variant="h2" gutterBottom component="div">
           Choose your time for appointment
         </Typography>
