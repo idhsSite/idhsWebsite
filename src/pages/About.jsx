@@ -1,6 +1,6 @@
 import React from 'react';
 // import React, { useState } from 'react';
-import { Container, Typography, Box, Grid, Paper, Button } from '@mui/material';
+import { Container, Typography, Box, Grid, Paper, Button , useTheme} from '@mui/material';
 import Achievements from "../components/Achievements"
 
 // Using global state management for 'See More' button from ShowMore.jsx file, and also have Local state management code below(Commented Code).
@@ -14,6 +14,7 @@ const operatingCities = [
 ];
 
 const About = () => {
+  const theme = useTheme();
   const { expandedSections, toggleExpanded } = useShowMore();
   // const [introExpanded, setIntroExpanded] = useState(false);
   // const [missionExpanded, setMissionExpanded] = useState(false);
@@ -28,8 +29,13 @@ const About = () => {
 
   // const { isExpanded, toggleExpanded } = useShowMore();
   return (
-    <Container maxWidth="lg">
-      <Box my={4} id="about-introduction">
+    <Container maxWidth="lg"n sx={{ 
+      p: 2, 
+      borderColor: theme.palette.secondary.main, // Use the secondary color for the border
+      borderWidth: '2px', // Adjust border width as needed
+      borderStyle: 'solid', // Set the border style
+    }}>
+      <Box my={4} id="about-introduction"b>
         <Typography variant="h2" component="h1" gutterBottom>
           About IDHS
         </Typography>
@@ -62,7 +68,14 @@ const About = () => {
       </Box>
       <Grid container spacing={3}>
         <Grid item xs={12} md={6} id="about-mission">
-          <Paper elevation={3} sx={{ p: 2 }}>
+          <Paper elevation={3}  sx={{ 
+              p: 2, 
+              borderColor: theme.palette.secondary.main, // Use the secondary color for the border
+              borderWidth: '2px', // Adjust border width as needed
+              borderStyle: 'solid', // Set the border style
+            }}
+        
+      >
             <Typography variant="h5" component="h2" gutterBottom>
               Our Mission
             </Typography>
@@ -82,8 +95,14 @@ const About = () => {
             </Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} md={6} id="about-vision">
-          <Paper elevation={3} sx={{ p: 2 }}>
+        <Grid item xs={12} md={6} id="about-vision" >
+          <Paper elevation={3} sx={{ 
+              p: 2, 
+              borderColor: theme.palette.secondary.main, // Use the secondary color for the border
+              borderWidth: '2px', // Adjust border width as needed
+              borderStyle: 'solid', // Set the border style
+            }}
+        >
             <Typography variant="h5" component="h2" gutterBottom>
               Our Vision
             </Typography>
@@ -105,7 +124,13 @@ const About = () => {
           </Paper>
         </Grid>
         <Grid item xs={12} id="why-choose-us">
-          <Paper elevation={3} sx={{ p: 2 }}>
+          <Paper elevation={3}  sx={{ 
+              p: 2, 
+              borderColor: theme.palette.secondary.main, // Use the secondary color for the border
+              borderWidth: '2px', // Adjust border width as needed
+              borderStyle: 'solid', // Set the border style
+            }}
+        >
             <Typography variant="h5" component="h2" gutterBottom>
               Why Choose Us?
             </Typography>
@@ -131,7 +156,6 @@ const About = () => {
       </Grid>
 
       {/* Consider adding additional sections like Testimonials, Achievements, etc., with relevant semantic markup */}
-      <Achievements />
     </Container>
   );
 };

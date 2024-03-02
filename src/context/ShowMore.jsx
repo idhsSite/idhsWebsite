@@ -11,12 +11,15 @@ export const ShowMoreProvider = ({ children }) => {
     missionExpanded: false,
     visionExpanded: false,
     chooseUsExpanded: false,
+    patientExpanded: false,
+    hospitalExpanded: false,
+    doctorExpanded: false
   });
 
-  const toggleExpanded = (section) => {
-    setExpandedSections((prev) => ({
+  const toggleExpanded = (sectionKey) => {
+    setExpandedSections(prev => ({
       ...prev,
-      [section]: !prev[section],
+      [sectionKey]: !prev[sectionKey],
     }));
   };
 

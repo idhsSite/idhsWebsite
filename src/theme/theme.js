@@ -1,6 +1,6 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme , responsiveFontSizes} from '@mui/material/styles';
 
-const theme = createTheme({
+let theme = createTheme({
     palette: {
         primary: {
             main: '#7258BC',
@@ -9,7 +9,24 @@ const theme = createTheme({
             main: '#00B29A',
         },
     },
-    // Add additional theme customizations here (e.g., typography, breakpoints)
+    typography: {
+        h1: {
+            fontSize: '2.5rem', // You can adjust this base size
+        },
+        h2: {
+            fontSize: '1.75rem', // Base size for h2
+        },
+        h3: {
+            fontSize: '1.5rem', // Base size for h3
+        },
+        h5: {
+            fontSize: '0.75rem', // Base size for h3
+        },
+    },
+    // Other customizations...
 });
+
+// Use responsiveFontSizes to adjust typography responsively
+theme = responsiveFontSizes(theme);
 
 export default theme;

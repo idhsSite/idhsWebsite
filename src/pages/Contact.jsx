@@ -33,11 +33,6 @@ const Contact = () => {
         <Typography variant="h4" gutterBottom color="primary" align="center">
             Get in Touch
         </Typography>
-        <Typography>
-        At IDHS, we believe that healthcare is not just in groundbreaking technology
-         but in the connections we build with each individual who uses our services. Our commitment goes beyond providing 
-         solutions; it's about fostering lasting relationships that empower you to take control of your health and wellness journey.
-        </Typography>
         <Grid item xs={12} sm={6} md={3}>
                         <Typography variant="h6" gutterBottom>
                             Follow Us
@@ -67,6 +62,19 @@ const Contact = () => {
                       onChange={handleChange}
                       multiline={key === 'message'}
                       rows={key === 'message' ? 4 : 1}
+                      sx={{
+                        '& .MuiOutlinedInput-root': {
+                          '& fieldset': {
+                            borderColor: theme.palette.secondary.main, // default
+                          },
+                          '&:hover fieldset': {
+                            borderColor: theme.palette.primary.main, // on hover
+                          },
+                          '&.Mui-focused fieldset': {
+                            borderColor: theme.palette.secondary.main, // on focus
+                          },
+                        },
+                      }}
                     />
                   </Grid>
                 ))}

@@ -30,16 +30,16 @@ const HomePage = () => {
           textAlign: 'center',
         }}
       >
-        <Typography variant="h2" gutterBottom>
-          Making health services accessible
+        <Typography variant="h1" gutterBottom>
+        Enhancing and transforming healthcare infrastructure through technology.
         </Typography>
-        <Typography variant="h5" sx={{ mb: 3 }}>
+        <Typography variant="h3 " sx={{ mb: 3 }}>
           Book your appointment.
         </Typography>
-        <Typography variant="h5" sx={{ mb: 3 }}>
+        <Typography variant="h3" sx={{ mb: 3 }}>
           Book emergency services.
         </Typography>
-        <Typography variant="h5" sx={{ mb: 3 }}>
+        <Typography variant="h3" sx={{ mb: 3 }}>
           Choose your customise treatment plan.
         </Typography>
         <Button variant="contained" color="secondary" size="large">
