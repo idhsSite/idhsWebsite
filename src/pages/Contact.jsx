@@ -46,12 +46,11 @@ const Contact = () => {
 
     // Using EmailJS to send the form data
     emailjs.sendForm('service_xfclmid', 'template_b9ee1wh', form.current, 'yweHPbW3d9fTixms-')
-      .then((result) => {
+      .then(() => {
         setEmailSent(true)
         setFormData({ from_name: '', email: '', message: '' }); // Reset form data
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
+      }, () => {
+  "Try after some time"
       });
   };
 
