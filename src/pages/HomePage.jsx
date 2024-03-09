@@ -1,10 +1,8 @@
 import React from 'react';
-import { Container, Typography, Button, Grid, Card, CardContent, CardMedia, Box } from '@mui/material';
-import HeroImage from '../assets/images/ero-container-imag.png'; // Ensure you have a hero image in your assets folder
-import Services from "../pages/Services"
-import About from './About';
-import Contact from './Contact';
-import {ShowMoreProvider} from "../context/ShowMore"
+import { Container, Typography, Button, Box ,useTheme} from '@mui/material';
+import Services from "../pages/Services.jsx"
+import About from './About.jsx';
+import Contact from './Contact.jsx';
 
 // Mock data for services, replace with real data
 const services = [
@@ -14,15 +12,16 @@ const services = [
 ];
 
 const HomePage = () => {
+  const theme = useTheme();
   return (
-    <ShowMoreProvider>
+<>
       <Box
         sx={{
-          backgroundImage: `url(${HeroImage})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'left',
+          backgroundColor:theme.palette.primary.main,
           color: '#fff',
-          height: '75vh',
+          height: '500px',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -31,18 +30,10 @@ const HomePage = () => {
         }}
       >
         <Typography variant="h1" gutterBottom>
-        Enhancing and transforming healthcare infrastructure through technology.
+        Enhancing and Transforming healthcare services.
         </Typography>
-        <Typography variant="h3 " sx={{ mb: 3 }}>
-          Book your appointment.
-        </Typography>
-        <Typography variant="h3" sx={{ mb: 3 }}>
-          Book emergency services.
-        </Typography>
-        <Typography variant="h3" sx={{ mb: 3 }}>
-          Choose your customise treatment plan.
-        </Typography>
-        <Button variant="contained" color="secondary" size="large">
+       
+        <Button variant="contained" color="secondary" size="large" href="/launching-soon">
           Download app
         </Button>
       </Box>
@@ -51,8 +42,8 @@ const HomePage = () => {
         <About/>
       </Container>
       <Contact/>
-      </ShowMoreProvider>
-  );
+      </>
+  );  
 };
 
 export default HomePage;

@@ -25,9 +25,9 @@ const Footer = () => {
                         <Typography variant="h6" gutterBottom>
                             Services
                         </Typography>
-                        <Link color="inherit" variant="body2" display="block" component={NavLink} to="/patient-app">Patient App</Link>
-                        <Link color="inherit" variant="body2" display="block" component={NavLink} to="/hospital-management">Hospital Management</Link>
-                        <Link color="inherit" variant="body2" display="block" component={NavLink} to="/doctor-app">Doctor App</Link>
+                        <Link color="inherit" variant="body2" display="block" component={NavLink} to="/launching-soon">Patient App</Link>
+                        <Link color="inherit" variant="body2" display="block" component={NavLink} target='blank' to= 'http://50.18.119.35/idhs/hospital/login'>Hospital Management</Link>
+                        <Link color="inherit" variant="body2" display="block" component={NavLink} to="/launching-soon">Doctor App</Link>
                     </Grid>
                     <Grid item xs={12} sm={6} md={2}>
                         <Typography variant="h6" gutterBottom>

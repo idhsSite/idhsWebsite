@@ -19,6 +19,9 @@ let theme = createTheme({
         h3: {
             fontSize: '1.5rem', // Base size for h3
         },
+        h4:{
+           fontSize: '1rem'
+        },
         h5: {
             fontSize: '0.75rem', // Base size for h3
         },

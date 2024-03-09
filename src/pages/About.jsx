@@ -1,34 +1,24 @@
 import React from 'react';
-// import React, { useState } from 'react';
 import { Container, Typography, Box, Grid, Paper, Button , useTheme} from '@mui/material';
-import Achievements from "../components/Achievements"
+import { ShowMoreProvider } from '../context/ShowMore';
+
 
 // Using global state management for 'See More' button from ShowMore.jsx file, and also have Local state management code below(Commented Code).
 import { useShowMore } from "../context/ShowMore"
 
 
 // Example cities where the company operates
-const operatingCities = [
-  'New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix',
-  'Philadelphia', 'San Antonio', 'San Diego', 'Dallas', 'San Jose'
-];
+// const operatingCities = [
+//   'New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix',
+//   'Philadelphia', 'San Antonio', 'San Diego', 'Dallas', 'San Jose'
+// ];
 
 const About = () => {
   const theme = useTheme();
   const { expandedSections, toggleExpanded } = useShowMore();
-  // const [introExpanded, setIntroExpanded] = useState(false);
-  // const [missionExpanded, setMissionExpanded] = useState(false);
-  // const [visionExpanded, setVisionExpanded] = useState(false);
-  // const [chooseUsExpanded, setChooseUsExpanded] = useState(false);
-
-  // const toggleIntroExpanded = () => setIntroExpanded(!introExpanded);
-  // const toggleMissionExpanded = () => setMissionExpanded(!missionExpanded);
-  // const toggleVisionExpanded = () => setVisionExpanded(!visionExpanded);
-  // const toggleChooseUsExpanded = () => setChooseUsExpanded(!chooseUsExpanded);
-
-
-  // const { isExpanded, toggleExpanded } = useShowMore();
+ 
   return (
+    <ShowMoreProvider>
     <Container maxWidth="lg"n sx={{ 
       p: 2, 
       borderColor: theme.palette.secondary.main, // Use the secondary color for the border
@@ -157,6 +147,7 @@ const About = () => {
 
       {/* Consider adding additional sections like Testimonials, Achievements, etc., with relevant semantic markup */}
     </Container>
+    </ShowMoreProvider>
   );
 };
 
