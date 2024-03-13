@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Box, Card, CardContent, CardMedia, Typography, Grid, Button, useMediaQuery, useTheme } from '@mui/material';
 import { Link } from 'react-router-dom';
 import PatientApp from "../assets/images/Patient-app.png"; // Ensure the path is correct
+import DoctorApp from "../assets/images/Doctor-homepage.png"
 import HospitalManagement from "../assets/images/Hospital-management.png"; // Ensure the path is correct
 import { useShowMore } from "../context/ShowMore"
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
@@ -47,7 +48,7 @@ const servicesData = [
 
     features3: 'Accept booking',
 
-    imageUrl: PatientApp,
+    imageUrl: DoctorApp,
     altText: 'Doctor scheduling an appointment using the app',
     ctaUrl: "/launching-soon",
     statistics: 'Launching soon!',
