@@ -1,4 +1,5 @@
-import React, { useState } from 'react'; 
+/* eslint-disable no-unused-vars */
+import React from 'react';
 import { Box, Card, CardContent, CardMedia, Typography, Grid, Button, useMediaQuery, useTheme } from '@mui/material';
 import { Link } from 'react-router-dom';
 import PatientApp from "../assets/images/Patient-app.png"; // Ensure the path is correct
@@ -17,7 +18,7 @@ const servicesData = [
     features1: 'Compare and   Book health services',
     features2: 'Get emergency services',
     features3: 'Choose customise treatment plans',
-    
+
 
     imageUrl: PatientApp,
     altText: 'Telemedicine consultation happening over a computer',
@@ -53,17 +54,10 @@ const servicesData = [
     ctaUrl: "/launching-soon",
     statistics: 'Launching soon!',
     action: 'Download app'
-    
+
   },
 ];
 
-
-// State to track which service's details are shown
-
-
-
-
-// Services 
 
 
 const Services = () => {
@@ -83,34 +77,37 @@ const Services = () => {
           const serviceKey = `service${index}`; // Construct a unique key for each service
           return (
             <Grid item xs={12} sm={6} md={4} key={index}>
-              <Card raised sx={{ display: 'flex', flexDirection: 'column', minHeight: 'auto' }}>
-               
+              <Card raised sx={{ display: 'flex', flexDirection: 'column', maxHeight: 'auto' }}>
+
                 <CardContent sx={{ flexGrow: 1, p: 3 }}>
-                  <Typography gutterBottom variant="h2" component="h3">
+                  <Typography gutterBottom variant="h2" component="h3" sx={{height:'50px'}}>
                     {service.title}
                   </Typography>
-                  <CardMedia
-                  component="img"
-                  image={service.imageUrl}
-                  alt={service.altText}
-                  sx={{ height: 'auto',width: '100%', maxHeight: isSmallScreen ? 200 : 300 }}
-                />
-                 
-                  <Typography color="textSecondary"gutterBottom variant="h4" component="h4" paragraph >
-                  <StarPurple500Icon sx={{ color: theme.palette.secondary.main }}/>
+                  <div style={{height:'320px',display:'flex',alignItems:"start" }}>
+                    <CardMedia
+                      component="img"
+                      image={service.imageUrl}
+                      alt={service.altText}
+                      sx={{ height: '100%', width: '100%', objectFit: 'contain'}}
+                      // sx={{ height: 'auto', width: '100%', maxHeight: isSmallScreen ? 200 : 300 }}
+                    />
+                  </div>
+
+                  <Typography color="textSecondary" gutterBottom variant="h4" component="h4" paragraph sx={{marginTop:'1rem',display:'flex',alignItems:'center',gap:'10px'}} >
+                    <StarPurple500Icon sx={{ color: theme.palette.secondary.main, }} />
                     {service.features1}
                   </Typography>
-                  <Typography gutterBottom variant="h4" component="h4" paragraph color="textSecondary">
-                  <LocalHospitalIcon sx={{ color: theme.palette.secondary.main }}/>
-                    
+                  <Typography gutterBottom variant="h4" component="h4" paragraph color="textSecondary" sx={{display:'flex',alignItems:'center',gap:'10px'}}>
+                    <LocalHospitalIcon sx={{ color: theme.palette.secondary.main }} />
+
                     {service.features2}
                   </Typography>
-                  <Typography  color="textSecondary" gutterBottom variant="h4" component="h4" paragraph>
-                  <DateRangeIcon sx={{ color: theme.palette.secondary.main }}/>
-                    
+                  <Typography color="textSecondary" gutterBottom variant="h4" component="h4" paragraph sx={{display:'flex',alignItems:'center',gap:'10px'}}>
+                    <DateRangeIcon sx={{ color: theme.palette.secondary.main }} />
+
                     {service.features3}
                   </Typography>
-                
+
                   {expandedSections[serviceKey] && (
                     <>
                       <Typography variant="body1" paragraph>

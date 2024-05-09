@@ -17,18 +17,17 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <ShowMoreProvider>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/launching-soon" element={<Launching />} />
-        </Routes>
-        <Footer />
-      </Router>
-
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/launching-soon" element={<Launching />} />
+          </Routes>
+          <Footer />
+        </Router>
       </ShowMoreProvider>
 
     </ThemeProvider>

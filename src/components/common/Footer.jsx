@@ -29,14 +29,6 @@ const Footer = () => {
                         <Link color="inherit" variant="body2" display="block" component={NavLink} target='blank' to= 'http://50.18.119.35/idhs/hospital/login'>Hospital Management</Link>
                         <Link color="inherit" variant="body2" display="block" component={NavLink} to="/launching-soon">Doctor App</Link>
                     </Grid>
-                    {/* <Grid item xs={12} sm={6} md={2}>
-                        <Typography variant="h6" gutterBottom>
-                            Legal
-                        </Typography>
-                        <Link color="inherit" variant="body2" display="block" component={NavLink} to="/terms-conditions">Terms & Conditions</Link>
-                        <Link color="inherit" variant="body2" display="block" component={NavLink} to="/privacy-policy">Privacy Policy</Link>
-                        <Link color="inherit" variant="body2" display="block" component={NavLink} to="/refund-policy">Refund Policy</Link>
-                    </Grid> */}
                     <Grid item xs={12} sm={6} md={2}>
                         <Typography variant="h6" gutterBottom>
                             Follow Us

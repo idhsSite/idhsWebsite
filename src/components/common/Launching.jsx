@@ -23,7 +23,7 @@ function Launching() {
         Launching Soon
       </Typography>
       <Typography variant="body1" sx={{ mb: 4 }}>
-        We are working hard to bring you an amazing experience to access healtcare services. join pre-event for the launch of patient app.
+        We are working hard to bring you an amazing experience to access healthcare services. join pre-event for the launch of patient app.
       </Typography>
       <Box sx={{ width: '100%', maxWidth: '600px', mb: 4 }}>
         <Contact /> {/* Contact component included directly */}

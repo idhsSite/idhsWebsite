@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Container, Typography, Box, Grid, TextField, Button, Paper, useTheme, IconButton, Snackbar } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import QRCode from "../assets/images/WhatsApp-QR.jpeg"; // Ensure correct path
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import emailjs from 'emailjs-com';
@@ -132,7 +131,7 @@ const Contact = () => {
               Click here to chat with us on WhatsApp
             </Typography>
           </a>
-          <img src={QRCode} alt="WhatsApp QR Code" style={{ width: '100%', maxWidth: '300px', height: 'auto' }} />
+          {/* <img src={QRCode} alt="WhatsApp QR Code" style={{ width: '100%', maxWidth: '300px', height: 'auto' }} /> */}
         </Grid>
       </Grid>
       <Grid item xs={12} sm={6} md={3}>
