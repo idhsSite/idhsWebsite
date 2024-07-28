@@ -31,7 +31,7 @@ const Header = () => {
       <AppBar position="sticky">
       <Box sx={{ bgcolor: 'primary.dark', color: 'white', py: 1 }}>
         <Box sx={{ display: 'flex', justifyContent: 'flex-start', marginRight: '16px' }}> {/* Adjust marginRight as per your theme's spacing */}
-          <Button color="inherit" sx={{ mx: 1 }} href='http://50.18.119.35/idhs/hospital/login' target='blank'>Register as Hospital</Button>
+          <Button color="inherit" sx={{ mx: 1 }} href="https://account.idhs.in" target='blank'>Register as Hospital</Button>
           <Button color="inherit" href="/launching-soon">Download Patient App</Button>
         </Box>
       </Box>

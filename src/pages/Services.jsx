@@ -12,7 +12,7 @@ import DateRangeIcon from '@mui/icons-material/DateRange';
 // Updated mock data for services card
 const servicesData = [
   {
-    title: 'Patient app',
+    title: 'IDHS Patient app',
     description: 'IDHS provide a wide range of solutions for your health issues. 1: Book appointment to Doctors/Hospitals  2: Book emergency services  3: Choose your customise treatment plan.',
     features1: 'Compare and   Book health services',
     features2: 'Get emergency services',
@@ -26,7 +26,7 @@ const servicesData = [
     action: 'Download app'
   },
   {
-    title: 'Hospital Management System',
+    title: ' IDHS HMS',
     description: 'Our Hospital Management System revolutionizes hospital operations with package management, data analytics, Booking management, and administrative management, setting new standards for healthcare efficiency.',
     features1: 'Manage your health services',
     features2: 'Get listed on IDHS user app',
@@ -35,26 +35,10 @@ const servicesData = [
 
     imageUrl: HospitalManagement,
     altText: 'Digital hospital management system interface',
-    ctaUrl: 'http://50.18.119.35/idhs/hospital/login',
+    ctaUrl: 'http://account.idhs.in',
     statistics: 'Implemented in 100+ hospitals, increasing efficency in daily operation and increase in patients per month.',
     action: 'Register now'
-  },
-  {
-    title: `Doctor's App`,
-    description: 'The Doctor Appointment App simplifies healthcare management for doctors. 1: Clinic practice management 2: Featuring intuitive calender management  3: Booking management.',
-
-    features1: 'Manage your profile and calendar',
-    features2: 'Get listed on IDHS user app',
-
-    features3: 'Accept booking',
-
-    imageUrl: DoctorApp,
-    altText: 'Doctor scheduling an appointment using the app',
-    ctaUrl: "/launching-soon",
-    statistics: 'Launching soon!',
-    action: 'Download app'
-    
-  },
+  }
 ];
 
 
@@ -78,7 +62,7 @@ const Services = () => {
       <Typography variant="h2" component="h2" gutterBottom align="center" sx={{ mb: 5 }}>
         Explore our Services
       </Typography>
-      <Grid container spacing={4}>
+      <Grid container spacing={4} >
         {servicesData.map((service, index) => {
           const serviceKey = `service${index}`; // Construct a unique key for each service
           return (
@@ -93,19 +77,22 @@ const Services = () => {
                   component="img"
                   image={service.imageUrl}
                   alt={service.altText}
-                  sx={{ height: 'auto',width: '100%', maxHeight: isSmallScreen ? 200 : 300 }}
+                  sx={{ height: '100%', width: '100%', objectFit: 'contain'}}
+                  
                 />
                  
-                  <Typography color="textSecondary"gutterBottom variant="h4" component="h4" paragraph >
+                  <Typography color="textSecondary"gutterBottom variant="h4" component="h4" paragraph 
+                   sx={{display:'flex',alignItems:'center',gap:'10px'}}>
                   <StarPurple500Icon sx={{ color: theme.palette.secondary.main }}/>
                     {service.features1}
                   </Typography>
-                  <Typography gutterBottom variant="h4" component="h4" paragraph color="textSecondary">
+                  <Typography gutterBottom variant="h4" component="h4" paragraph color="textSecondary"  sx={{display:'flex',alignItems:'center',gap:'10px'}}>
                   <LocalHospitalIcon sx={{ color: theme.palette.secondary.main }}/>
                     
                     {service.features2}
                   </Typography>
-                  <Typography  color="textSecondary" gutterBottom variant="h4" component="h4" paragraph>
+                  <Typography  color="textSecondary" gutterBottom variant="h4" component="h4" paragraph
+                   sx={{display:'flex',alignItems:'center',gap:'10px'}}>
                   <DateRangeIcon sx={{ color: theme.palette.secondary.main }}/>
                     
                     {service.features3}

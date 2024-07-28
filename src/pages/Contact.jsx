@@ -125,15 +125,14 @@ const Contact = () => {
             />
           </Paper>
         </Grid>
-        <Grid item xs={12} md={5} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+        {/* <Grid item xs={12} md={5} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
           <a href="https://wa.me/message/LTODPVJUGRV5P1 " target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
 
             <Typography variant="body1" gutterBottom sx={{ mb: 3, color: 'secondary.main' }} >
               Click here to chat with us on WhatsApp
             </Typography>
           </a>
-          <img src={QRCode} alt="WhatsApp QR Code" style={{ width: '100%', maxWidth: '300px', height: 'auto' }} />
-        </Grid>
+        </Grid> */}
       </Grid>
       <Grid item xs={12} sm={6} md={3}>
         <Typography variant="h6" gutterBottom>
