@@ -33,7 +33,6 @@ const App = () => {
             <Route path="/terms-conditions" element={<TermsConditions />} />
             <Route path="/refund-policy" element={<RefundPolicy />} />
             <Route path="/CustomerGrievanceRedressalPolicy" element={<CustomerGrievanceRedressalPolicy />} />
-
           </Routes>
           <Footer />
         </Router>
