@@ -49,12 +49,12 @@ const Services = () => {
       <Typography variant="h2" component="h2" gutterBottom align="center" sx={{ mb: 5 }}>
         Explore our Services
       </Typography>
-      <Grid container spacing={4}>
+      <Grid container spacing={4} justifyContent={"center"}>
         {servicesData.map((service, index) => {
           const serviceKey = `service${index}`; // Construct a unique key for each service
           return (
             <Grid item xs={12} sm={6} md={4} key={index}>
-              <Card raised sx={{ display: 'flex', flexDirection: 'column', maxHeight: 'auto' }}>
+              <Card raised sx={{ display: 'flex', flexDirection: 'column', maxHeight: '100%' }}>
                 <CardContent sx={{ flexGrow: 1, p: 3 }}>
                   <Typography gutterBottom variant="h2" component="h3" sx={{ height: '50px' }}>
                     {service.title}
@@ -63,7 +63,7 @@ const Services = () => {
                     component="img"
                     image={service.imageUrl}
                     alt={service.altText}
-                    sx={{ height: '100%', width: '100%', objectFit: 'contain' }}
+                    sx={{ height: '200px', width: '100%', objectFit: 'contain' }}
                   />
                   <Typography color="textSecondary" gutterBottom variant="h4" component="h4" paragraph sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <StarPurple500Icon sx={{ color: theme.palette.secondary.main }} />
