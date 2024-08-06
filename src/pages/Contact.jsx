@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
-import { Container, Typography, Box, Grid, TextField, Button, Paper, useTheme, IconButton, Snackbar } from '@mui/material';
+import React, { useState, useRef } from 'react';
+import { Container, Typography, Box, Grid, TextField, Button, Link, Paper, useTheme, IconButton, Snackbar } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import emailjs from 'emailjs-com';
-import { useRef } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+// import QRCode from '../assets/images/WhatsApp-QR.jpeg';
+import BusinessIcon from '@mui/icons-material/Business';
 
 
 const Contact = () => {
@@ -124,15 +128,50 @@ const Contact = () => {
             />
           </Paper>
         </Grid>
-        <Grid item xs={12} md={5} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-          <a href="https://wa.me/message/LTODPVJUGRV5P1 " target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
 
-            <Typography variant="body1" gutterBottom sx={{ mb: 3, color: 'secondary.main' }} >
-              Click here to chat with us on WhatsApp
-            </Typography>
-          </a>
-          {/* <img src={QRCode} alt="WhatsApp QR Code" style={{ width: '100%', maxWidth: '300px', height: 'auto' }} /> */}
-        </Grid>
+
+
+        {/* <Grid container spacing={2} justifyContent="center"> */}
+      <Grid item xs={12} md={5} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+        <a href="https://wa.me/message/GJ7W27SHMDBNM1" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+          <Typography variant="body1" gutterBottom sx={{ mb: 0, color: 'secondary.main' }}>
+            Click here to chat with us on WhatsApp
+          </Typography>
+        </a>
+        {/* <img src={QRCode} alt="WhatsApp QR Code" style={{ width: '100%', maxWidth: '300px', height: 'auto' }} /> */}
+        <Box p={6}>
+          <Typography variant="body1" gutterBottom  sx={{ mb: 0, color: 'secondary.main' }}>
+            Contact Us At
+          </Typography>
+          <ul style={{ listStyleType: 'none', padding: 0 }}>
+            <li style={{ marginTop: '16px', display: 'flex', alignItems: 'center' }}>
+              <PhoneIcon sx={{ mr: 1,  color:"secondary.main" }} />
+              <Link href="tel:+919523484666" color="inherit" underline="none">
+                +91-9523484666
+              </Link>
+            </li>
+            <li style={{ marginTop: '16px', display: 'flex', alignItems: 'center' }}>
+              <EmailIcon sx={{ mr: 1,  color:"secondary.main" }} />
+              <Link href="mailto:support@idhs.in" color="inherit" underline="none">
+                support@idhs.in
+              </Link>
+            </li>
+            <li style={{ marginTop: '16px', display: 'flex', alignItems: 'center' }}>
+              <LocationOnIcon sx={{ mr: 1, color:"secondary.main" }} />
+              <Typography variant="body1" color="text.primary">
+              C/o Sri. Bedamo Devi W/o Kailash Shah, Moti Thel Ara Urban-1 Arrah Near School Of Echonom, Phuhan, Bhojpur, Arrah, Bihar, India, 802163
+              </Typography>
+            </li>
+            <li style={{ marginTop: '16px', display: 'flex', alignItems: 'center' }}>
+              <BusinessIcon sx={{ mr: 1, color:"secondary.main" }} />
+              <Typography variant="body1" color="text.primary">
+              Kailash Upchar (OPC) Private Limited
+              </Typography>
+            </li>
+          </ul>
+        </Box>
+      </Grid>
+
       </Grid>
       <Grid item xs={12} sm={6} md={3}>
         <Typography variant="h6" gutterBottom>
