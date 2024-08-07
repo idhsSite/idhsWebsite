@@ -22,6 +22,7 @@ const servicesData = [
     altText: 'Telemedicine consultation happening over a computer',
     ctaUrl: "/launching-soon",
     statistics: 'Launching soon!',
+    Subscription: 'Free OPD Booking',
     action: 'Download app'
   },
   {
@@ -34,6 +35,7 @@ const servicesData = [
     altText: 'Digital hospital management system interface',
     ctaUrl: 'http://account.idhs.in',
     statistics: 'Implemented in 100+ hospitals, increasing efficiency in daily operation and increase in patients per month.',
+    Subscription: '4999 for 3 months , 8999 for 6 months , 14999 for 12 months',
     action: 'Register now'
   },
 
@@ -84,6 +86,9 @@ const Services = () => {
                       </Typography>
                       <Typography variant="body2" color="textSecondary">
                         Statistics: {service.statistics}
+                      </Typography>
+                      <Typography variant="body2" color="textSecondary" sx={{ mt:2 }}>
+                        Subscription: {service.Subscription}
                       </Typography>
                     </>
                   )}

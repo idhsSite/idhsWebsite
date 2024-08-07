@@ -61,7 +61,7 @@ const Footer = () => {
                     </Grid>
                 </Grid>
                 <Typography variant="body2" align="center" sx={{ mt: 3 }}>
-                    © {new Date().getFullYear()} IDHS. All rights reserved.
+                    © {new Date().getFullYear()} Kailash Upchar (OPC) Private Limited. All rights reserved.
                 </Typography>
             </Container>
         </Box>
