@@ -20,7 +20,7 @@ const servicesData = [
     features3: 'Choose customise treatment plans',
     imageUrl: PatientApp,
     altText: 'Telemedicine consultation happening over a computer',
-    ctaUrl: "/launching-soon",
+    ctaUrl: "/idhs-app",
     statistics: 'Launching soon!',
     Subscription: 'Free OPD Booking',
     action: 'Download app'
@@ -94,7 +94,7 @@ const Services = () => {
                   )}
                 </CardContent>
                 <Box sx={{ p: 2, display: 'flex', justifyContent: 'space-between' }}>
-                  <Button variant="contained" color="primary" component={Link} to={service.ctaUrl} target="_blank" sx={{ width: '48%' }}>
+                  <Button variant="contained" color="primary" component={Link} to={service.ctaUrl} sx={{ width: '48%' }}>
                     {service.action}
                   </Button>
                   <Button

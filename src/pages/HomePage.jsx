@@ -3,9 +3,11 @@ import { Container, Typography, Button, Box, useTheme } from '@mui/material';
 import Services from "../pages/Services.jsx"
 import About from './About.jsx';
 import Contact from './Contact.jsx';
+import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
   const theme = useTheme();
+  const navigate = useNavigate();
   return (
     <>
       <Box
@@ -26,7 +28,7 @@ const HomePage = () => {
           Enhancing and Transforming healthcare services.
         </Typography>
 
-        <Button variant="contained" color="secondary" size="large" href="/launching-soon">
+        <Button variant="contained" color="secondary" size="large" onClick={() => navigate('/idhs-app')}>
           Download app
         </Button>
       </Box>

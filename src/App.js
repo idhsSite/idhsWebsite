@@ -11,7 +11,7 @@ import theme from './theme/theme.js'; // Ensure this path is correct
 import CssBaseline from '@mui/material/CssBaseline';
 import Header from "../src/components/Header.jsx";
 import Footer from './components/common/Footer.jsx';
-import Launching from './components/common/Launching.jsx';
+import DownloadApp from './components/common/DownloadApp.jsx';
 import { ShowMoreProvider } from './context/ShowMore.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CustomerGrievanceRedressalPolicy from './pages/CustomerGrievanceRedressalPolicy.jsx';
@@ -28,7 +28,7 @@ const App = () => {
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/launching-soon" element={<Launching />} />
+            <Route path="/idhs-app" element={<DownloadApp />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-conditions" element={<TermsConditions />} />
             <Route path="/refund-policy" element={<RefundPolicy />} />

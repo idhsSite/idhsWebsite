@@ -58,14 +58,14 @@ const Contact = () => {
   };
 
   return (
-    <Container maxWidth="md" sx={{ py: 4 }} id="contact"> {/* Added id for smooth scrolling/linking */}
+    <Container component="main" maxWidth="md" sx={{ py: 4 }} id="contact"> {/* Added id for smooth scrolling/linking */}
       <Typography variant="h2" gutterBottom color="primary" align="center">
         Get in Touch
       </Typography>
 
-      <Grid container spacing={2} sx={{ mb: 2 }}>
+      <Grid container spacing={5} sx={{ mb: 2 }}>
         <Grid item xs={12} md={7}>
-          <Paper elevation={3} sx={{ p: 4 }}>
+          <Paper elevation={5} sx={{ p: 4 }}>
             <form onSubmit={handleSubmit} autoComplete="off" ref={form}>
               <Grid container spacing={2}>
 
@@ -132,20 +132,20 @@ const Contact = () => {
 
 
         {/* <Grid container spacing={2} justifyContent="center"> */}
-      <Grid item xs={12} md={5} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+      <Grid container item xs={12} md={4} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
         <a href="https://wa.me/message/GJ7W27SHMDBNM1" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-          <Typography variant="body1" gutterBottom sx={{ mb: 0, color: 'secondary.main' }}>
+          <Typography variant="body1" sx={{ mb: 0, color: 'secondary.main' }}>
             Click here to chat with us on WhatsApp
           </Typography>
         </a>
         {/* <img src={QRCode} alt="WhatsApp QR Code" style={{ width: '100%', maxWidth: '300px', height: 'auto' }} /> */}
-        <Box p={6}>
-          <Typography variant="body1" gutterBottom  sx={{ mb: 0, color: 'secondary.main' }}>
+        <Box m={6}>
+          <Typography variant="body1"  sx={{ mb: 0, color: 'secondary.main' }}>
             Contact Us At
           </Typography>
           <ul style={{ listStyleType: 'none', padding: 0 }}>
             <li style={{ marginTop: '16px', display: 'flex', alignItems: 'center' }}>
-              <PhoneIcon sx={{ mr: 1,  color:"secondary.main" }} />
+              <PhoneIcon sx={{ mr: 5,  color:"secondary.main" }} />
               <Link href="tel:+919523484666" color="inherit" underline="none">
                 +91-9523484666
               </Link>
@@ -174,7 +174,7 @@ const Contact = () => {
 
       </Grid>
       <Grid item xs={12} sm={6} md={3}>
-        <Typography variant="h6" gutterBottom>
+        <Typography variant="h6">
           Follow Us
         </Typography>
         <Box>

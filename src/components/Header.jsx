@@ -32,12 +32,12 @@ const Header = () => {
         <Box sx={{ bgcolor: 'primary.dark', color: 'white', py: 1 }}>
           <Box sx={{ display: 'flex', justifyContent: 'flex-start', marginRight: '16px' }}>
             <Button color="inherit" sx={{ mx: 1 }} href="https://account.idhs.in" target='blank'>Register as Hospital</Button>
-            <Button color="inherit" href="/launching-soon">Download Patient App</Button>
+            <Button color="inherit" onClick={() => navigate('/idhs-app')}>Download Patient App</Button>
             <Button color="inherit" sx={{ mx: 1 }} href='https://account.idhs.in/hospital/login' target='blank'>Login as Hospital</Button>
           </Box>
         </Box>
         <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1 }} onClick={() => navigate('/')}>
+          <Typography variant="h6" sx={{ flexGrow: 1, cursor: 'pointer' }} onClick={() => navigate('/')}>
             IDHS : Indian Digital Health Solutions
           </Typography>
           {isSmallScreen ? (
@@ -53,7 +53,7 @@ const Header = () => {
               }}>
                 <List>
                   {menuItems.map((item) => (
-                    <ListItem button key={item.name} onClick={() => { navigate(item.path); handleDrawerClose(); }}>
+                    <ListItem key={item.name} onClick={() => { navigate(item.path); handleDrawerClose(); }}>
                       <ListItemText primary={item.name} />
                     </ListItem>
                   ))}
